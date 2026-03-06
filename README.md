@@ -107,3 +107,6 @@ Uses `IntersectionObserver` on the last card in the grid. When it enters the vie
 npm run build
 npm run preview
 ```
+## Live URL Link
+
+Try the proper functioning here: https://cine-stream-delta.vercel.app/
