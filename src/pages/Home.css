@@ -1,0 +1,137 @@
+.home { padding: 40px 0 80px; }
+
+/* ── Hero ── */
+.home__hero {
+  text-align: center;
+  padding: 56px 0 48px;
+}
+
+.home__hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(230,57,70,0.2);
+  border-radius: 99px;
+  padding: 5px 14px;
+  margin-bottom: 20px;
+}
+
+.home__hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  letter-spacing: 0.03em;
+  line-height: 0.95;
+  color: var(--text-hi);
+  margin-bottom: 16px;
+}
+
+.home__hero-title .highlight { color: var(--accent); }
+
+.home__hero-sub {
+  font-size: 1rem;
+  color: var(--text-mid);
+  max-width: 480px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+
+/* ── Search wrapper ── */
+.home__search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+/* ── Mode indicator ── */
+.home__mode {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-lo);
+  margin-bottom: 32px;
+  min-height: 20px;
+}
+
+.home__mode .query { color: var(--text-mid); font-weight: 500; }
+
+/* ── Section header ── */
+.home__section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.home__section-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  color: var(--text-hi);
+}
+
+.home__section-count {
+  font-size: 0.8rem;
+  color: var(--text-lo);
+}
+
+/* ── Load more indicator ── */
+.home__loading-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+  color: var(--text-mid);
+  font-size: 0.875rem;
+}
+
+.home__loading-more .spinner { margin: 0; width: 24px; height: 24px; border-width: 2px; }
+
+/* ── End of results ── */
+.home__end {
+  text-align: center;
+  margin-top: 48px;
+  color: var(--text-lo);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Empty state ── */
+.home__empty {
+  text-align: center;
+  padding: 80px 0;
+  color: var(--text-mid);
+}
+
+.home__empty .icon { font-size: 3.5rem; margin-bottom: 16px; }
+.home__empty h3 { font-size: 1.2rem; color: var(--text-hi); margin-bottom: 8px; }
+.home__empty p { font-size: 0.875rem; color: var(--text-lo); }
+
+/* ── Debounce note ── */
+.home__debounce-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-lo);
+  margin-bottom: 32px;
+}
+
+.home__debounce-hint .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
+.home__debounce-hint.active .dot {
+  opacity: 1;
+  box-shadow: 0 0 6px var(--accent);
+}

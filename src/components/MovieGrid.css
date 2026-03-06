@@ -1,0 +1,25 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .movie-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .movie-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 24px; }
+}
+
+/* Stagger fade-in for cards */
+.movie-grid .movie-card:nth-child(1)  { animation-delay: 0.00s; }
+.movie-grid .movie-card:nth-child(2)  { animation-delay: 0.04s; }
+.movie-grid .movie-card:nth-child(3)  { animation-delay: 0.08s; }
+.movie-grid .movie-card:nth-child(4)  { animation-delay: 0.12s; }
+.movie-grid .movie-card:nth-child(5)  { animation-delay: 0.16s; }
+.movie-grid .movie-card:nth-child(6)  { animation-delay: 0.20s; }
+.movie-grid .movie-card:nth-child(7)  { animation-delay: 0.24s; }
+.movie-grid .movie-card:nth-child(8)  { animation-delay: 0.28s; }
+.movie-grid .movie-card:nth-child(9)  { animation-delay: 0.32s; }
+.movie-grid .movie-card:nth-child(10) { animation-delay: 0.36s; }
